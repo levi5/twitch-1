@@ -1,5 +1,8 @@
-import './bootstrap';
-import app from './app';
+import server from  "./App";
 
-app.listen(process.env.PORT);
-console.log(`🚀  Server ready at ${process.env.URL}`);
+import './bootstrap'
+
+
+server.listen(process.env.PORT, ()=>{
+  console.log(`🚀  Server ready at ${process.env.URL} ⚡🔥`);
+});
